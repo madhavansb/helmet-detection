@@ -1,5 +1,5 @@
 !pip install ultralytics opencv-python easyocr pandas
-
+#install necessary dependencies
 import cv2
 import numpy as np
 from ultralytics import YOLO
@@ -12,7 +12,7 @@ from google.colab import files
 # Initialize YOLO model
 model = YOLO('yolov8n.pt')
 
-# Initialize EasyOCR reader
+
 reader = easyocr.Reader(['en'], gpu=False)  # Set gpu=True if using Colab with GPU
 
 # Initialize Excel file
